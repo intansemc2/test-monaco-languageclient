@@ -1,0 +1,8 @@
+{
+	"/": [
+		"src/routes/+layout.server.ts"
+	],
+	"/bare": [
+		"src/routes/+layout.server.ts"
+	]
+}
