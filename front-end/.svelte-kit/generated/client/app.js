@@ -9,7 +9,7 @@ export const nodes = [
 export const server_loads = [0];
 
 export const dictionary = {
-		"/bare": [2]
+		"/python/client": [2]
 	};
 
 export const hooks = {

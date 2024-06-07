@@ -4,29 +4,18 @@ Here are the steps i tried to run the project:
 
 - Navigate to `back-end` folder
 
-- Create a virtual env for `python-lsp-server`
+- Install moodules
 
 ```
-python -m venv ./.venv
+pnpm i
 ```
 
-- Install libraries
+- Run server
 
 ```
-pip install -r requirements.txt
+pnpm start:server:python
 ```
 
-- Run the server
-
-```
-./run_start.sh
-```
-
-or 
-
-```
-pylsp --ws --port 3000
-```
 
 2. Run the front-end
 
@@ -44,4 +33,4 @@ pnpm i
 pnpm dev 
 ```
 
-- Open the website at `http://localhost:5173/bare`
+- Open the website at `http://localhost:5173/python/client`

@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/bare/+page.svelte";
+export { default as component } from "../../../../src/routes/python/client/+page.svelte";

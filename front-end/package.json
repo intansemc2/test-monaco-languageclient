@@ -23,7 +23,6 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
-		"monaco-editor": "^0.49.0",
 		"postcss": "^8.4.38",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
@@ -39,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"@codingame/monaco-vscode-configuration-service-override": "~5.2.0",
+		"@codingame/monaco-vscode-editor-service-override": "^5.2.0",
 		"@codingame/monaco-vscode-extensions-service-override": "~5.2.0",
 		"@codingame/monaco-vscode-files-service-override": "~5.2.0",
 		"@codingame/monaco-vscode-groovy-default-extension": "~5.2.0",
@@ -61,15 +61,17 @@
 		"daisyui": "^4.11.1",
 		"isomorphic-dompurify": "^2.11.0",
 		"marked": "^12.0.2",
-		"monaco-editor-wrapper": "^5.1.2",
-		"monaco-languageclient": "^8.4.0",
+		"monaco-editor": "npm:@codingame/monaco-vscode-editor-api@~5.2.0",
+		"monaco-editor-wrapper": "~5.2.0",
+		"monaco-languageclient": "~8.5.0",
 		"pocketbase": "^0.21.3",
 		"svelte-hero-icons": "^5.1.0",
 		"vscode": "npm:@codingame/monaco-vscode-api@~5.2.0",
 		"vscode-json-languageservice": "~5.3.11",
-		"vscode-languageclient": "^9.0.1",
+		"vscode-languageclient": "~9.0.1",
 		"vscode-languageserver": "~9.0.1",
 		"vscode-uri": "~3.0.8",
-		"vscode-ws-jsonrpc": "^3.3.1"
+		"vscode-ws-jsonrpc": "~3.3.2",
+		"ws": "~8.17.0"
 	}
 }

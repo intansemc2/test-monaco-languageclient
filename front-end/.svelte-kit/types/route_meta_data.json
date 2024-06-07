@@ -2,7 +2,7 @@
 	"/": [
 		"src/routes/+layout.server.ts"
 	],
-	"/bare": [
+	"/python/client": [
 		"src/routes/+layout.server.ts"
 	]
 }
