@@ -117,6 +117,9 @@ importers:
         specifier: ~8.17.0
         version: 8.17.0
     devDependencies:
+      '@codingame/esbuild-import-meta-url-plugin':
+        specifier: ^1.0.2
+        version: 1.0.2
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
         version: 3.2.1(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.144)(vite@5.2.12(@types/node@20.12.13)))(svelte@5.0.0-next.144)(vite@5.2.12(@types/node@20.12.13)))
@@ -193,6 +196,9 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@codingame/esbuild-import-meta-url-plugin@1.0.2':
+    resolution: {integrity: sha512-b1PjH6DVdTQd0WLO2R+b9oMlO7REyiAVbcx8weN1ZYiBSROuAy9MJ/j2NI4sxmFv9GK0wM9HRrBg6J2CBZ1xzQ==}
 
   '@codingame/monaco-vscode-api@5.2.0':
     resolution: {integrity: sha512-BUQRd+CDqfCy6ybXIZVFEqmo7S2we8kBhgPZlSUpDKW1uH6SYoWVtdd1EisgjtSHMbk2F0UgHhttjWrGhgflPQ==}
@@ -2080,6 +2086,11 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@codingame/esbuild-import-meta-url-plugin@1.0.2':
+    dependencies:
+      esbuild: 0.20.2
+      import-meta-resolve: 4.1.0
 
   '@codingame/monaco-vscode-api@5.2.0':
     dependencies:

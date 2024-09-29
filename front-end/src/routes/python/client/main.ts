@@ -29,6 +29,15 @@ export const configureMonacoWorkers = () => {
 	});
 };
 
+enum MONACO_SUPPORT_THEME {
+	dark = 'Default Dark Modern',
+	light = 'Default Light Modern',
+	high_contrast_dark = 'Default High Contrast',
+	high_contrast_light = 'Default High Contrast Light',
+	dark_plus = 'Default Dark+',
+	light_plus = 'Default Light+'
+}
+
 export const runPythonWrapper = async () => {
 	const helloPyUri = vscode.Uri.file('/workspace/hello.py');
 	const hello2PyUri = vscode.Uri.file('/workspace/hello2.py');
@@ -54,6 +63,21 @@ export const runPythonWrapper = async () => {
 				await vscode.workspace.openTextDocument(helloPyUri);
 
 				await wrapper.start(htmlElement);
+
+				wrapper.getMonacoEditorApp()?.updateUserConfiguration(
+					JSON.stringify({
+						'editor.wordWrap': 'on',
+						'editor.fontSize': 18,
+						'editor.tabWidth': 4,
+						'editor.singleQuote': true,
+						'editor.fontFamily': "'Fira Code', 'monospace', monospace",
+						'editor.fontLigatures': true,
+						'editor.stickyScroll.scrollWithEditor': false,
+						'workbench.tree.enableStickyScroll': false,
+						'editor.stickyScroll.enabled': false,
+						'workbench.colorTheme': MONACO_SUPPORT_THEME.dark
+					})
+				);
 			}
 		});
 		document.querySelector('#button-dispose')?.addEventListener('click', async () => {
